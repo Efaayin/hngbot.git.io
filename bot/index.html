@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+
+    <style>
+        body,
+        html {
+            margin: 0;
+            background-color: rgb(150, 214, 205);
+        }
+
+        .container {
+            width: 100%;
+            color: white;
+            background-color: rgb(16, 58, 52);
+            border: 2px solid black;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: bolder;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>welcome</h2>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "e956d78d-5b4c-4e7d-8a7e-292b84b11086", // The ID of this integration.
+            region: "eu-gb", // The region your integration is hosted in.
+            serviceInstanceID: "908774b7-d6f1-4036-9e65-60879a0098db", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>
